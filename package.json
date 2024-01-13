@@ -11,5 +11,6 @@
   "scripts": {
     "dev": "nodemon"
   },
-  "author": "Joao Zacchello"
+  "author": "Joao Zacchello",
+  "license": "MIT"
 }
