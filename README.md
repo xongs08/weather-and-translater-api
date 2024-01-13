@@ -23,3 +23,5 @@ fetch('http://localhost:3000/api/weather/new+york')//{ method: "GET" }
     .then(data => console.log(data))
     .catch(err => console.log(`Error at fetching data: ${err}`));
 ```
+<span>RESPONSE</span>
+<img src="https://i.imgur.com/no6dtqL.png">
