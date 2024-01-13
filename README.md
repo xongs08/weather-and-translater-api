@@ -23,7 +23,7 @@ fetch('http://localhost:3000/api/weather/new+york')
   .then(data => console.log(data))
   .catch(err => console.log(`Error at fetching weather data: ${err}`));
 ```
-<img alt="RESPONSE" src="https://i.imgur.com/no6dtqL.png">
+<img alt="WEATHER RESPONSE" src="https://i.imgur.com/no6dtqL.png">
 
 ### How to translate a text?
 ```js
@@ -32,3 +32,4 @@ fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
   .then(data => console.log(data))
   .catch(err => console.log(`Error at translating: ${err}`));
 ```
+<img alt="TRANSLATER RESPONSE" src="https://i.imgur.com/md9sPAE.png">
