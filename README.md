@@ -14,4 +14,7 @@
   <pre>npm install && npm run dev</pre>
 </div>
 
-
+## How to use
+The server will start at localhost port 3000
+### How to get weather?
+fetch()
