@@ -26,6 +26,8 @@ fetch('http://localhost:3000/api/weather/new+york')
 <img alt="WEATHER RESPONSE" src="https://i.imgur.com/no6dtqL.png">
 
 ### How to translate a text?
+<span>Params</span>
+<pre>/translater/SOURCE_LANGUAGE/TARGET_LANGUAGE/TEXT_TO_BE_TRANSLATED</pre>
 ```js
 fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
   .then(resp => resp.json())
