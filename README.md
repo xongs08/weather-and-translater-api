@@ -21,6 +21,14 @@ The server will start at localhost port 3000
 fetch('http://localhost:3000/api/weather/new+york')
   .then(resp => resp.json())
   .then(data => console.log(data))
-  .catch(err => console.log(`Error at fetching data: ${err}`));
+  .catch(err => console.log(`Error at fetching weather data: ${err}`));
 ```
 <img alt="RESPONSE" src="https://i.imgur.com/no6dtqL.png">
+
+### How to translate a text?
+```js
+fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
+  .then(resp => resp.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(`Error at translating: ${err}`));
+```
