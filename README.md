@@ -41,7 +41,7 @@ fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
 ### I don't want to use port 3000
 <p>It's ok</p>
 <summary><span>Go to the API directory</span></summary>
-<pre>cd weather-and-translater-api/src</pre>
+<pre>weather-and-translater-api/src</pre>
 <p>Then go to the server.js file</p>
 <img alt="server file" src="https://i.imgur.com/h0LzYJ3.png">
 <p>On the line 13</p>
