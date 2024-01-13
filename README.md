@@ -43,4 +43,7 @@ fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
 <summary><span>Go to the API directory</span></summary>
 <pre>cd weather-and-translater-api/src</pre>
 <span>Then go to the server.js file</span>
-<img alt="server.js file" src="https://i.imgur.com/h0LzYJ3.png">
+<img alt="server file" src="https://i.imgur.com/h0LzYJ3.png">
+<span>On the line 13</span>
+<img alt="server file line 13" src="https://i.imgur.com/qhnnHRz.png">
+<span>And change the port to whatever you want</span>
