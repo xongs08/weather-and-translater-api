@@ -1,6 +1,6 @@
 # WEATHER & TRANSLATER API
 
-## How to use
+## Installing
 <summary><span>Clone the repo</span></summary>
 <pre>git clone https://github.com/xongs08/weather-and-translater-api.git</pre>
 <summary><span>Go to the repo directory</span></summary>
@@ -13,3 +13,5 @@
   NPM
   <pre>npm install && npm run dev</pre>
 </div>
+
+
