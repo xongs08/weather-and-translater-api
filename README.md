@@ -29,7 +29,7 @@ fetch('http://localhost:3000/api/weather/new+york')
 
 ### How to translate a text?
 <span>Params</span>
-<pre>/translater/SOURCE_LANGUAGE/TARGET_LANGUAGE/TEXT_TO_BE_TRANSLATED</pre>
+<pre>/translater/SOURCE_LANGUAGE/TARGET_LANGUAGE/TEXT+TO+BE+TRANSLATED</pre>
 ```js
 fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
   .then(resp => resp.json())
