@@ -17,4 +17,9 @@
 ## How to use
 The server will start at localhost port 3000
 ### How to get weather?
-fetch()
+```js
+fetch('http://localhost:3000/api/weather/new+york')//{ method: "GET" }
+    .then(resp => resp.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(`Error at fetching data: ${err}`));
+```
