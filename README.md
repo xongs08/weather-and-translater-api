@@ -18,7 +18,7 @@
 The server will start at localhost port 3000
 ### How to get weather?
 <span>Params</span>
-<pre>/weather/REGION</pre>
+<pre>/weather/REGION+NAME</pre>
 ```js
 fetch('http://localhost:3000/api/weather/new+york')
   .then(resp => resp.json())
