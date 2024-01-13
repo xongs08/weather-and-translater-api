@@ -5,7 +5,7 @@
 <pre>git clone https://github.com/xongs08/weather-and-translater-api.git</pre>
 <summary><span>Go to the repo directory</span></summary>
 <pre>cd weather-and-translater-api</pre>
-<summary><span>Insalling dependencies and starting the server</span></summary>
+<summary><span>Installing dependencies and starting the server</span></summary>
 <div>
   <br>
   YARN
