@@ -43,4 +43,4 @@ fetch('http://localhost:3000/api/translater/pt/en/Olá+mundo!')
 <summary><span>Go to the API directory</span></summary>
 <pre>cd weather-and-translater-api/src</pre>
 <span>Then go to the server.js file</span>
-
+<img alt="server.js file" src="https://i.imgur.com/h0LzYJ3.png">
