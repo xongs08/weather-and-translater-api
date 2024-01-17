@@ -18,13 +18,8 @@ const translater = async (sl, tl, text) => {
     } catch(err) {
         await browser.close();
         console.log(err);
-        return null;
+        return undefined;
     }
 };
 
 module.exports = translater;
-
-// (async () => {
-//     const resp = await translater('pt', 'en', 'Eles me chamam de Xongs por aqui (apelido estranho, eu sei)');
-//     console.log(resp);
-// })();

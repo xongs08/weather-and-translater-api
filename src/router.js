@@ -6,20 +6,36 @@ const router = express();
 
 router.use(express.json());
 
+const checkUndefined = (json_) => {
+    let status = 200;
+
+    Object.entries(json_).forEach(([key, value]) => {
+        if (value === undefined) {
+            status = 403;
+        }
+    });
+
+    return status;
+};
+
 router.get('/weather/:region', async (req, res) => {
-    const results = await weather(req.params.region);
-    if(!results) {
+    const weatherData = await weather(req.params.region);
+
+    const weatherStatus = checkUndefined(weatherData);
+    if (weatherStatus === 403) {
         res.sendStatus(403);
+    } else {
+        res.json(weatherData);
     }
-    res.json(results);
 });
 
 router.get('/translater/:sl/:tl/:text', async (req, res) => {
-    const result = await translater(req.params.sl, req.params.tl, req.params.text);
-    if (!result) {
+    const translatedText = await translater(req.params.sl, req.params.tl, req.params.text);
+    if (translatedText === undefined) {
         res.sendStatus(403);
+    } else {
+        res.json({ translatedText: translatedText });
     }
-    res.json({ translatedText: result });
 });
 
 module.exports = router;

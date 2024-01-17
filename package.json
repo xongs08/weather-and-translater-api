@@ -9,7 +9,8 @@
     "nodemon": "^3.0.2"
   },
   "scripts": {
-    "dev": "nodemon"
+    "start": "nodemon",
+    "test": "node ./tests.js"
   },
   "author": "Joao Zacchello",
   "license": "MIT"
