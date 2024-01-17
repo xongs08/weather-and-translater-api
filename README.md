@@ -9,9 +9,9 @@
 <div>
   <br>
   YARN
-  <pre>yarn && yarn dev</pre>
+  <pre>yarn && yarn start</pre>
   NPM
-  <pre>npm install && npm run dev</pre>
+  <pre>npm install && npm run start</pre>
 </div>
 
 ## How to use
