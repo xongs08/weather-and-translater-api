@@ -1,12 +1,12 @@
-const express = require('express');
-const weather = require('./weather');
-const translater = require('./translater');
+import express from 'express';
+import weather from '../services/weather';
+import translater from '../services/translater';
 
-const router = express();
+const router = express.Router();
 
 router.use(express.json());
 
-const checkUndefined = (json_) => {
+export const checkUndefined = (json_: any) => {
     let status = 200;
 
     Object.entries(json_).forEach(([key, value]) => {

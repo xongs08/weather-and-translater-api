@@ -1,4 +1,6 @@
-const find = async (page, selector) => {
+import { Page } from "puppeteer";
+
+const find = async (page: Page, selector: string) => {
     try {
         const element = await page.$eval(selector, el => el.textContent);
         return element;
@@ -7,4 +9,4 @@ const find = async (page, selector) => {
     }
 };
 
-module.exports = find;
+export default find;

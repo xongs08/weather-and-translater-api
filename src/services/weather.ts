@@ -1,8 +1,8 @@
-const puppeteer = require('puppeteer');
-const find = require('./find');
-const translater = require('./translater');
+import puppeteer from "puppeteer";
+import find from "../utils/find";
+import translater from "./translater";
 
-const weather = async (region) => {
+const weather = async (region: string) => {
     const browser = await puppeteer.launch({ headless: 'new' });
     const page = await browser.newPage();
 
@@ -45,4 +45,4 @@ const weather = async (region) => {
     }
 };
 
-module.exports = weather;
+export default weather;

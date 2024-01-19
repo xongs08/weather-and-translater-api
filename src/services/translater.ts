@@ -1,7 +1,7 @@
-const puppeteer = require('puppeteer');
-const find = require('./find');
+import puppeteer from "puppeteer";
+import find from "../utils/find";
 
-const translater = async (sl, tl, text) => {
+const translater = async (sl: string, tl: string, text: string) => {
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
 
@@ -22,4 +22,4 @@ const translater = async (sl, tl, text) => {
     }
 };
 
-module.exports = translater;
+export default translater;
